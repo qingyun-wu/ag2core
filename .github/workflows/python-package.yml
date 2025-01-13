@@ -41,8 +41,8 @@ jobs:
       - name: Build ag2core
         shell: pwsh
         run: |
-          uv pip install --system twine
-          uv build
+          uv pip install --system build twine
+          python -m build
       - name: Publish ag2core to PyPI
         env:
           TWINE_USERNAME: ${{ secrets.AG2CORE_PYPI_USERNAME }}
