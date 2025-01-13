@@ -48,4 +48,4 @@ jobs:
           TWINE_USERNAME: ${{ secrets.AG2CORE_PYPI_USERNAME }}
           TWINE_PASSWORD: ${{ secrets.AG2CORE_PYPI_PASSWORD }}
         shell: pwsh
-        run: twine upload dist/ag2core
+        run: twine upload dist/ag2core*
